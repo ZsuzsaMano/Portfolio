@@ -1,0 +1,19 @@
+//main: style.scss
+
+#body-about{
+  main{
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+  @include flex(center, center, row);
+  background: url(../img/me.jpg);
+  background-size: cover;
+}
+  p{
+    padding: 1rem;
+    max-width: 40vw;
+    line-height: 1.5rem;
+    background-color: rgba(256,256, 256, 0.6);
+    border-radius: 5px;
+  }
+}

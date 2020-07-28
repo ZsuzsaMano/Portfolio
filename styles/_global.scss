@@ -1,0 +1,26 @@
+ // main: style.scss
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+  font-style: normal;
+}
+
+.submit, button{
+  border:none;
+  border-radius:5px;
+}
+
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}

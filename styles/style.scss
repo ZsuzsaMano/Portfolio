@@ -1,0 +1,49 @@
+$font-color: black;
+$main-color:rgba(56, 22, 99, 0.95);
+$gradient: linear-gradient(rgba(47, 73, 167, 0.74),rgba(56, 22, 99, 0.83));;
+
+@mixin flex($justify, $align, $direction){
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "nav";
+@import "intro";
+@import "svganim";
+@import "projects";
+@import "contact";
+@import "footer";
+@import "about";
+
+@media screen and (max-width:660px){
+  html{
+    font-size: 80%;
+  }
+
+}
+
+@media screen and (max-width:977px){
+
+  .intro{
+    display:block;
+    .intro-text{
+      height:auto;
+    }
+  }
+
+  .intro-img{
+    position: relative;
+
+  svg{
+    width: 90vw;
+    position: absolute;
+    top:-240px;
+    right:0;
+    z-index:-1;
+  }
+  }
+}

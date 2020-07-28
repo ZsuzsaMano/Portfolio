@@ -1,0 +1,85 @@
+// main: style.scss
+
+#intro-body{
+  overflow: hidden;
+}
+
+.intro{
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+@include flex(space-between, center, row);
+
+
+.intro-text{
+  height: 90vh;
+  flex:1 1 25rem;
+
+  h2{
+    font-size: 3.5rem;
+    margin-top: 3rem;
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+  h3{
+    font-size: 2.5em;
+    color:rgb(60, 74, 77);
+    margin: 0 0 2em 0;
+  }
+  p{
+    margin: 4em 0;
+    background: rgba(256, 256, 256, 0.3);
+    border-radius: 15px;
+    padding: 1rem 0;
+    max-width: 70%;
+  }
+}
+}
+
+.intro-social{
+  @include flex(space-between, center, row);
+  max-width: 60%;
+  svg{
+    fill:rgba(56, 22, 99, 0.95);
+  }
+}
+
+.intro-img{
+  flex: 1 1 30rem;
+  position: relative;
+  align-self: flex-start;
+
+
+svg{
+  width: 80vw;
+  position: absolute;
+  top:-10vw;
+  right:-20vw;
+  z-index:-1;
+}
+}
+
+@media screen and (max-width:660px){
+  .intro .intro-text{
+    h2{
+      font-size: 2rem;
+    }
+    h3{
+      font-size: 2.2rem;
+      margin-bottom: 0;
+    }
+    p{
+      max-width: 90%;
+      margin: 1.5em 0;
+    }
+    .intro-social{
+      max-width: 90%;
+      svg{
+        width:3rem;
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,20 @@
+// main: style.scss
+
+
+#Vector_31{
+  //make it grow.
+}
+
+#hair{
+  animation: moveHair 3s ease-in infinite alternate;
+  transform-origin: top;
+}
+
+@keyframes moveHair{
+  from{
+    transform: rotateZ(3deg);
+  }
+  to{
+    transform: rotateZ(0deg);
+  }
+}

@@ -1,0 +1,18 @@
+// main: style.scss
+
+footer{
+  @include flex(space-between, center, row);
+  color: white;
+  background-color: $main-color;
+  min-height: 10vh;
+  padding: 0 0.5rem;
+
+  .social{  @include flex(space-around, center, row);
+    width: 50vw;
+
+  }
+  svg{
+    fill:white;
+    width: 2.3rem;
+  }
+}
