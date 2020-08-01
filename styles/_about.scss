@@ -4,7 +4,7 @@
   main{
   width: 90%;
   margin: auto;
-  height: 80vh;
+  min-height: 80vh;
   @include flex(center, center, row);
   background: url(../img/me.jpg);
   background-size: cover;
@@ -12,10 +12,21 @@
 main{
   p{
     padding: 1rem;
-    max-width: 40vw;
+    width: 500px;
     line-height: 1.5rem;
     background-color: rgba(256,256, 256, 0.6);
     border-radius: 5px;
   }
   }
+}
+
+@media screen and (max-width: 660px){
+  #body-about{
+    main{
+      p{
+        width:90vw;
+      }
+    }
+  }
+
 }
