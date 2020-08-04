@@ -1,11 +1,6 @@
 // main: style.scss
 
 
-
-
-
-
-
 #projects-body{
 main{
   margin: 3rem auto;
@@ -13,13 +8,13 @@ main{
 }
 }
 
-.flex{
+.website, .app{
     @include flex(space-between, center, row);
 }
 
 .mockup{
-  margin: 2rem 0;
-  min-height: 55vh;
+  margin: 1.5rem 0;
+  min-height: 250px;
   @include flex(space-around,center, column);
 .mockup-img{
   width: 300px;
@@ -29,6 +24,12 @@ main{
     width: 100%;
   }
 }
+}
+
+.app-each{
+  margin: 1.5rem 0;
+  min-height: 220px;
+  @include flex(space-around,center, column);
 }
 
 .app-img{
