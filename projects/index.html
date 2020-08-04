@@ -8,7 +8,17 @@
   <title>Projects</title>
   <!-- Handlebar.js-->
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-  <script id="text-template" type="text/x-handlebars-template">
+  <script id="app-template" type="text/x-handlebars-template">
+         {{#each appName}}
+         <a href="https://codepen.io/zsuzsamano" class="mockup">
+           <h2>{{this}}</h2>
+           <div class="app-img">
+             <img src="../img/{{this}}.png" alt="{{this}}">
+         </div>
+         </a>
+      {{/each}}
+  </script>
+  <script id="certificate-template" type="text/x-handlebars-template">
          {{#each name}}
     <section class="certificate-each">
       <h2>{{this}}</h2>
@@ -18,6 +28,8 @@
     </section>
       {{/each}}
   </script>
+
+
 </head>
 <body id="projects-body">
   <header class="main-head">
@@ -79,18 +91,7 @@
 </div>
 <h1 id="apps">Apps /VanillaJS/</h1>
 <div class="flex">
-<a href="https://codepen.io/zsuzsamano/pen/NWGMaMv" class="mockup quiz">
-  <h2>Quiz</h2>
-  <div class="app-img">
-    <img src="../img/quiz.png" alt="">
-</div>
-</a>
-<a href="https://codepen.io/zsuzsamano/full/gOavXEy" class="mockup quiz">
-  <h2>StopWatch</h2>
-  <div class="app-img">
-    <img src="../img/stop.png" alt="">
-</div>
-</a>
+  <a href="" class="app" id="app"></a>
 </div>
  <h1 id="certificates">Certificates</h1>
 <div class="flex">
