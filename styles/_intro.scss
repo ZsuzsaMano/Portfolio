@@ -81,5 +81,27 @@ svg{
       }
     }
   }
-  
+
+}
+
+@media screen and (max-width:977px){
+
+  .intro{
+    display:block;
+    .intro-text{
+      height:auto;
+    }
+  }
+
+  .intro-img{
+    position: relative;
+
+  svg{
+    width: 90vw;
+    position: absolute;
+    top:-240px;
+    right:0;
+    z-index:-1;
+  }
+  }
 }
