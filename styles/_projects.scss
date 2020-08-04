@@ -9,7 +9,7 @@ main{
 }
 
 .website, .app{
-    @include flex(space-between, center, row);
+    @include flex(space-around, center, row);
 }
 
 .mockup{
