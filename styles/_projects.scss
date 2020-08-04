@@ -2,9 +2,7 @@
 
 
 
-.mobile{
-  max-width: 250px;
-}
+
 
 
 
@@ -25,11 +23,20 @@ main{
   @include flex(space-around,center, column);
 .mockup-img{
   width: 300px;
+  max-width: 100vw;
   .responsive{
     height: 100%;
     width: 100%;
   }
 }
+}
+
+.app-img{
+  max-width: 250px;
+  img{
+    width:100%;
+    height: 100%;
+  }
 }
 
 .certificate{
@@ -46,7 +53,7 @@ main{
 }
 
 .certificate-img{
-  max-width: 100px;
+  max-width: 160px;
   transition: all 0.6s ease-in;
   img{
     width:100%;
