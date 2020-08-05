@@ -6,15 +6,17 @@
   margin: auto;
   min-height: 80vh;
   @include flex(center, center, row);
-  background: url(../img/me.jpg);
-  background-size: cover;
+  // background: url(../img/background.svg);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: 900px;
 }
 main{
   p{
     padding: 1rem;
     width: 500px;
     line-height: 1.5rem;
-    background-color: rgba(256,256, 256, 0.6);
+   //background-color: rgba(256,256, 256, 0.8);
     border-radius: 5px;
   }
   }

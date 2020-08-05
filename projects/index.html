@@ -10,10 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script id="app-template" type="text/x-handlebars-template">
          {{#each appName}}
-         <a href="https://codepen.io/zsuzsamano" target="_blank" class="app-each">
-           <h2>{{this}}</h2>
+         <a href="https://codepen.io/zsuzsamano/pen/{{link}}" target="_blank" class="app-each">
+           <h2>{{name}}</h2>
            <div class="app-img">
-             <img src="../img/{{this}}.png" alt="{{this}}">
+             <img src="../img/{{name}}.png" alt="{{name}}">
          </div>
          </a>
       {{/each}}
