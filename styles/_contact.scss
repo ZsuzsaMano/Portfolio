@@ -4,7 +4,7 @@
   height: 80vh;
   @include flex(center, center, row);
   form{
-    height:400px;
+    height:360px;
     @include flex(space-around, flex-start, column);
     box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.4),
     20px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -29,6 +29,10 @@
         opacity:1;
         }
   }
+}
 
-
+@media screen and (max-width: 520px){
+  .contact-form{
+    min-height: 70vh;
+  }
 }
