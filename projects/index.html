@@ -10,12 +10,19 @@
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script id="app-template" type="text/x-handlebars-template">
          {{#each appName}}
-         <a href="https://codepen.io/zsuzsamano/full/{{link}}" target="_blank" class="app-each">
-           <h2>{{name}}</h2>
-           <div class="app-img">
-             <img src="../img/{{name}}.png" alt="{{name}}">
-         </div>
+         <div class="app__each">
+         <h2>{{name}}</h2>
+         <div class="app-img">
+           <img src="../img/{{name}}.png" alt="{{name}}">
+       </div>
+       <div class="app__link">
+         <a href="https://codepen.io/zsuzsamano/full/{{link}}" target="_blank">
+           <button>SITE</button>
          </a>
+         <a href="https://codepen.io/zsuzsamano/pen/{{link}}" target="_blank"><button>CODE</button></a>
+         </div>
+         </div>
+
       {{/each}}
   </script>
   <script id="certificate-template" type="text/x-handlebars-template">
@@ -56,7 +63,7 @@
 </div>
 <div class="mockup-text">
 <p class="description">My portfolio website </p>
-<p class="technics">Made with: SVG animation, SASS, Handlebars</p>
+<p class="technics">Made with: SVG animation, SASS, Handlebars.js</p>
 </div>
 </a>
 

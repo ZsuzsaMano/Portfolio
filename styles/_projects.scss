@@ -30,10 +30,24 @@ main{
 }
 }
 
-.app-each{
+.app__each{
   margin: 1.5rem 0;
-  min-height: 220px;
+  min-height: 260px;
   @include flex(space-around,center, column);
+  .app__link{
+    width:100%;
+    @include flex(space-around,center, row);
+      button{
+        padding: 0.5em 1.3em;
+        background: white;
+        border-radius: 5px;
+        border: 1px solid rgb(100, 100, 100);
+        &:hover{
+          background: rgb(40, 40, 40);
+          color: white;
+        }
+      }
+  }
 }
 
 .app-img{
