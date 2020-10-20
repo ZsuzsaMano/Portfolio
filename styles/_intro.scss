@@ -34,6 +34,8 @@
     border-radius: 15px;
     padding: 1rem 0;
     max-width: 70%;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
   }
 }
 }
@@ -81,5 +83,27 @@ svg{
       }
     }
   }
-  
+
+}
+
+@media screen and (max-width:977px){
+
+  .intro{
+    display:block;
+    .intro-text{
+      height:auto;
+    }
+  }
+
+  .intro-img{
+    position: relative;
+
+  svg{
+    width: 90vw;
+    position: absolute;
+    top:-240px;
+    right:0;
+    z-index:-1;
+  }
+  }
 }

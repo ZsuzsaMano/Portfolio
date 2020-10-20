@@ -1,7 +1,7 @@
 //main: style.scss
 
 .contact-form{
-  height: 80vh;
+  min-height: 80vh;
   @include flex(center, center, row);
   form{
     height:400px;
@@ -29,6 +29,10 @@
         opacity:1;
         }
   }
+}
 
-
+@media screen and (max-width: 520px){
+  .contact-form{
+    min-height: 70vh;
+  }
 }

@@ -1,0 +1,37 @@
+// main:style.scss
+
+
+#lightbox{
+  position:fixed;
+  z-index: 10;
+  top:0;
+  width:100%;
+  height: 100%;
+  display:none;
+}
+
+.lightbox__figure{
+  padding: 0.8rem;
+  background:rgb(244, 245, 245);
+  border: 1px solid rgb(220, 220, 220);
+  width: -webkit-min-content;
+width: -moz-min-content;
+width: min-content;
+}
+
+.lightbox__image{
+  display:block;
+  max-width:60vw;
+  max-height:60vh;
+  width: auto;
+  height: auto;
+}
+
+.ligthbox__caption{
+  font-size: 0.8rem;
+}
+
+#lightbox.active{
+  @include flex(center,center,row);
+  background: rgba(0, 0, 0, 0.9);
+}

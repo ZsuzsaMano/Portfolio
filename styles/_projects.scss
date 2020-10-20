@@ -1,35 +1,61 @@
 // main: style.scss
 
 
-
-.mobile{
-  max-width: 250px;
-}
-
-
-
 #projects-body{
+
 main{
   margin: 3rem auto;
   width: 90vw;
+  h1{
+    margin: 1em 0 0.5em 0;
+  }
 }
 }
 
-.flex{
-    @include flex(space-between, center, row);
+.website, .app{
+    @include flex(space-around, center, row);
 }
 
 .mockup{
-  margin: 2rem 0;
-  min-height: 55vh;
+  margin: 1.5rem 0;
+  min-height: 250px;
   @include flex(space-around,center, column);
 .mockup-img{
   width: 300px;
+  max-width: 100vw;
   .responsive{
     height: 100%;
     width: 100%;
   }
 }
+}
+
+.app__each{
+  margin: 1.5rem 0;
+  min-height: 260px;
+  @include flex(space-around,center, column);
+  .app__link{
+    width:100%;
+    @include flex(space-around,center, row);
+      button{
+        padding: 0.5em 1.3em;
+        background: white;
+        border-radius: 5px;
+        border: 1px solid rgb(100, 100, 100);
+        &:hover{
+          background: rgb(40, 40, 40);
+          color: white;
+        }
+      }
+  }
+}
+
+.app-img{
+  max-width: 250px;
+  img{
+    width:100%;
+    height: 100%;
+  }
 }
 
 .certificate{
@@ -46,20 +72,21 @@ main{
 }
 
 .certificate-img{
-  max-width: 100px;
+  max-width: 160px;
   transition: all 0.6s ease-in;
+  cursor: pointer;
   img{
     width:100%;
     height: 100%;
-  }
-  &:hover{
-    transform: scale(5);
   }
 }
 
 @media screen and(max-width:935px) {
   .certificate-each{
-    margin: 2rem;
+    margin: 1rem;
     @include flex(space-around,center, column);
+  }
+  .certificate-img{
+    max-width: 200px;
   }
 }
