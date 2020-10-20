@@ -1,5 +1,6 @@
 $font-color: black;
 $main-color:rgba(56, 22, 99, 0.95);
+$main-color-faded:rgba(56, 22, 99, 0.95);
 $gradient: linear-gradient(rgba(47, 73, 167, 0.74),rgba(56, 22, 99, 0.83));;
 
 @mixin flex($justify, $align, $direction){
@@ -9,6 +10,7 @@ $gradient: linear-gradient(rgba(47, 73, 167, 0.74),rgba(56, 22, 99, 0.83));;
   align-items: $align;
   flex-direction: $direction;
 }
+
 
 @import "global";
 @import "nav";
