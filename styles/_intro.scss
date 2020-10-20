@@ -45,6 +45,11 @@
   max-width: 60%;
   svg{
     fill:rgba(56, 22, 99, 0.95);
+    &:hover{
+      transform: scale(1.1);
+      fill:rgba(56, 22, 99, 0.85);
+      transition: transform 250ms linear;
+    }
   }
 }
 
