@@ -44,10 +44,10 @@
   @include flex(space-between, center, row);
   max-width: 60%;
   svg{
-    fill:rgba(56, 22, 99, 0.95);
+    fill:$main-color;
     &:hover{
       transform: scale(1.1);
-      fill:rgba(56, 22, 99, 0.85);
+      fill:$main-color-faded;
       transition: transform 250ms linear;
     }
   }

@@ -14,5 +14,10 @@ footer{
   svg{
     fill:white;
     width: 2.3rem;
+    &:hover{
+      filter: drop-shadow(1px 1px 1px white);
+      fill:$main-color-faded;
+      transition: all 250ms linear;
+    }
   }
 }
