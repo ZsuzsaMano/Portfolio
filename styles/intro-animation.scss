@@ -1,0 +1,36 @@
+//main: style.scss
+
+//my name slide in;
+
+
+//type symulation
+
+.type-wrapper{
+  height: 8rem;
+  width: 26rem;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3{
+  width: 13ch;
+  animation: typing 4s steps(13), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid grey;
+  font-size: 2em;
+  font-family: 'B612 Mono', monospace;
+}
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
