@@ -44,11 +44,12 @@
   @include flex(space-between, center, row);
   max-width: 60%;
   svg{
-    fill:$main-color;
+    fill:white;
+    filter:drop-shadow(1px 1px 1px black);
+    transition: transform 250ms linear;
     &:hover{
-      transform: scale(1.1);
-      fill:$main-color-faded;
-      transition: transform 250ms linear;
+       fill:$main-color;
+       filter:drop-shadow(0 0 0 $main-color);
     }
   }
 }
