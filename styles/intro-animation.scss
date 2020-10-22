@@ -1,7 +1,20 @@
 //main: style.scss
 
 //my name slide in;
+.intro-text{
+  position: relative;
+  h2{
+    position: relative;
+    left: -50rem;
+    animation: slideIn 3s forwards 4s;
+  }
+}
 
+@keyframes slideIn{
+  to{
+    left:0;
+  }
+}
 
 //type symulation
 
@@ -25,7 +38,7 @@
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 
